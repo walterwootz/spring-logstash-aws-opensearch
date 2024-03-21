@@ -6,7 +6,7 @@ The service is responsible to read logs from your Spring logs folder and push th
 
 ## Requirements for EC2 instance
 - Spring app running in EC2 instance
-- Docker + Docker Desktop running in EC2 instance
+- Docker engine + docker-compose running in EC2 instance
 - OpenSearch domain available on AWS 
 
 ## Steps
