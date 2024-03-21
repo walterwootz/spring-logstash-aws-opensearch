@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.10.2
+    hostname: logstash
+    restart: on-failure
+    volumes:
+      - ./local-path-to-spring-app-logs:/logs
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
